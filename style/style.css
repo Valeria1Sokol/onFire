@@ -317,72 +317,72 @@
     padding: 0.52vw;
 }
 
-.toDoList .col:nth-of-type(1) .allDayList {
+#user1 .allDayList {
     margin: 0 0 6.6vw;
 }
 
-.toDoList .col:nth-of-type(1) .list {
+#user1 .list {
     height: 6.5vw;
     margin-top: 0.6vw;
 }
 
-.toDoList .col:nth-of-type(1) .list:nth-child(2n) {
+#user1 .list:nth-child(2n) {
     height: 5.5vw;
 }
 
-.toDoList .col:nth-of-type(1) .list:last-of-type {
+#user1 .list:last-of-type {
     height: 15vw;
     margin-top: 7.1vw;
 }
 
-.toDoList .col:nth-of-type(2) .list {
+#user2 .list {
     height: 33.3vw;
     margin-top: 6.96vw;
     padding: 0;
 }
 
-.toDoList .col:nth-of-type(2) .list .listTextLight {
+#user2 .list .listTextLight {
     padding: 0.52vw 1.1vw;
 }
 
-.toDoList .col:nth-of-type(2) .list .list {
+#user2 .list .list {
     width: 100%;
     height: 8.9vw;
     margin-top: 9.38vw;
 }
 
-.toDoList .col:nth-of-type(3) .list {
+#user3 .list {
     height: 18.65vw;
     margin-top: 15vw;
     padding: 0.8vw 1.1vw;
 }
 
-.toDoList .col:nth-of-type(4) .allDayList {
+#user4 .allDayList {
     margin: 0 0 3vw;
 }
 
-.toDoList .col:nth-of-type(4) .list {
+#user4 .list {
     height: 6vw;
     padding: 0.8vw 0.52vw;
 }
 
-.toDoList .col:nth-of-type(4) .list:last-of-type {
+#user4 .list:last-of-type {
     height: 12.57vw;
     margin-top: 1vw;
 }
 
-.toDoList .col:nth-of-type(5) .list {
+#user5 .list {
     height: 14.6vw;
     margin-top: 1vw;
     padding: 0.8vw 1.1vw;
 }
 
-.toDoList .col:nth-of-type(5) .list:nth-of-type(2n+1) {
+#user5 .list:nth-of-type(2n+1) {
     height: 7.2vw;
     margin-top: 1.7vw;
 }
 
-.toDoList .col:nth-of-type(5) .list:last-of-type {
+#user5 .list:last-of-type {
     margin-top: 9.3vw;
     height: 7.2vw;
 }
@@ -449,14 +449,15 @@
         top: 596px;
     }
 }
+
 @media all and (max-height:800px) {
     .Redline {
         top: 422px;
     }
 }
+
 @media all and (max-height:720px) {
     .Redline {
         top: 532px;
     }
 }
-

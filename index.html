@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/font.css">
+    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
 </head>
 
 <body>
@@ -65,12 +67,12 @@
                     <p class="time">18:00</p>
                     <p class="time">19:00</p>
                 </div>
-                <svg width="3"  fill="none" xmlns="http://www.w3.org/2000/svg" class="whiteLine">
+                <svg width="3" fill="none" xmlns="http://www.w3.org/2000/svg" class="whiteLine">
                     <rect opacity="0.1" width="3" height="1332" fill="white" />
                 </svg>
 
-                <div class="toDoList">
-                    <div class="col">
+                <div class="toDoList" id="sortablelist" data-id="1">
+                    <div class="col" data-id="2" id="user1">
                         <div class="user"><img src="img/Ellipse%2046.png" alt="">
                             <p class="name">Daniel</p>
                         </div>
@@ -87,7 +89,7 @@
                             <p class="listText">Meeting with John</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-id="3" id="user2">
                         <div class="user"><img src="img/Ellipse%2047.png" alt="">
                             <p class="name">Isabella</p>
                         </div>
@@ -99,7 +101,7 @@
                         </div>
 
                     </div>
-                    <div class="col">
+                    <div class="col" data-id="4" id="user3">
                         <div class="user"><img src="img/Ellipse%2048.png" alt="">
                             <p class="name">Elana</p>
                         </div>
@@ -107,7 +109,7 @@
                             <p class="listTextLight">School trip</p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-id="5" id="user4">
                         <div class="user"><img src="img/Ellipse%2049.png" alt="">
                             <p class="name">Kate</p>
                         </div>
@@ -122,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col" data-id="6" id="user5">
                         <div class="user"><img src="img/Ellipse%2049.png" alt="">
                             <p class="name">Kate</p>
                         </div>
@@ -142,22 +144,27 @@
                             <p class="listText">Dinner with Elon Musk</p>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div class="slideDot">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
 
+            </div>
         </div>
-        <div class="Redline">
-            <div class="circle"></div>
+        <div class="slideDot">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
+
+    </div>
+    <div class="Redline">
+        <div class="circle"></div>
     </div>
 
-</body>
+    <script>
+      new Sortable(sortablelist, {
+    animation: 150,
+    ghostClass: 'blue-background-class'
+});
+    </script>
 
-</html>
+</body></html>

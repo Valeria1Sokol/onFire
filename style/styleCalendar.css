@@ -1,0 +1,308 @@
+/*style of calendar*/
+.rightBox .userBox {
+    flex-direction: column-reverse;
+    width: auto;
+}
+
+.rightBox .userBox .time {
+    margin: 1.1vw 0 0;
+}
+
+.container .header {
+    background-image: url(../img/5a5f936da8151f31ddce5b079b4844e5.jpeg);
+    background-position: 0% 92%;
+    padding: 3.34vw 5.6vw 0.9vw;
+}
+
+.container .header .topHeader .date {
+    margin-top: 6.5vw;
+}
+
+.rightBox .weatherBox {
+    margin: 0;
+}
+
+.container .content .tittle {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.57vw;
+    line-height: 2.86vw;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+.content .toDoList .do {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.57vw;
+    line-height: 2.86vw;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+}
+
+.content .toDoList .doLight {
+    opacity: 0.3;
+}
+
+.container .content .grid {
+    padding: 2.5vw 8.8vw 6.12vw 5.5vw;
+}
+
+.container .content .toDoList {
+    width: 100%;
+}
+
+.container .content .toDoList .col {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.container .content .toDoList .col:first-of-type {
+    width: 45%;
+    height: 21.2vw;
+    margin: 4.5vw 0 0;
+}
+
+.whiteLine {
+    height: 32vw;
+    margin-top: 0vw;
+}
+
+.circleSvg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: auto;
+    height: 32.2vw;
+    margin: 4.5vw 0 0;
+}
+
+.circleSvg .circle {
+
+    width: 1.2vw;
+    height: 1.2vw;
+    position: relative;
+    left: -0.6vw;
+    top: 60.4%;
+    background: #C76177;
+    border: 0.1vw solid white;
+    border-radius: 50%;
+}
+
+.grid .timeBox {
+    padding: 0.9vw 0.8vw 0 0;
+    width: 6vw;
+    height: 32.2vw;
+    justify-content: flex-start;
+    margin: 4.5vw 0 0;
+}
+
+.grid .timeBox .time {
+    margin: 0vw 0 0;
+}
+
+.grid .timeBox .tittleTime {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+    margin: 0 0 4.55vw;
+}
+
+.grid .timeBox .time {
+    font-family: 'BebasNeue-Regular';
+    line-height: 1.83vw;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.grid .timeBox .lightTime:nth-child(2n+1) {
+    margin: 0 0 2.35vw;
+}
+
+.container .content .toDoList p {
+    font-size: 2.6vw;
+    line-height: 2.6vw;
+}
+
+.container .content .toDoList .do:nth-child(2n-1) {
+    margin: 0px 0 1vw;
+}
+
+
+.widget > .ui-datepicker {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header {
+
+    height: 3.3vw;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+    background-image: url(../img/noun_Left_1920907-2.png);
+    background-repeat: no-repeat;
+    background-size: 26%;
+    background-position: center;
+        width: 3.7vw;
+    height: 3.7vw;
+    /*    background: rgba(255, 255, 255, 0.5);*/
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    color: transparent;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev span,
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next span {
+/*
+    width: 19px;
+    height: 32px;
+*/
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+    left: 0%;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+    transform: rotate(180deg);
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.ui-datepicker-today {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month::after {
+    content: ",";
+}
+
+.widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-year {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar {
+    width: 100%;
+    margin: 4em 0 0;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar th {
+    font-family: 'BebasNeue-Bold';
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    width: 3.7vw;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td {
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1vw;
+}
+
+.widget tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.widget thead tr {
+    border-top: 1px solid rgba(196, 196, 196, 0.3);
+    border-bottom: 1px solid rgba(196, 196, 196, 0.3);
+    height: 3.3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a,
+.widget > .ui-datepicker > .ui-datepicker-calendar td span {
+
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td span {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.84vw;
+    line-height: 1.84vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td.ui-datepicker-today a,
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    color: #CCC;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 3.7vw;
+    height: 3.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active:after {
+    background: #FFAC76;
+}

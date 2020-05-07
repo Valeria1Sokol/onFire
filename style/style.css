@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
-    /*    width: 100vw;*/
-}
-
+/*style of toDoList*/
 .container .header {
     width: 100%;
     background-image: url(../img/3452444%201.png);
@@ -36,7 +33,6 @@
     font-weight: normal;
     font-size: 2.57vw;
     line-height: 3.2vw;
-    /* letter-spacing: -0.05em; */
     color: #FFFFFF;
     margin-top: 1.36vw;
 }
@@ -59,7 +55,6 @@
 
 .container .nav {
     width: 2.2vw;
-    /*    height: 1.7vw;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -461,3 +456,5 @@
         top: 532px;
     }
 }
+
+

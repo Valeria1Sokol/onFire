@@ -275,6 +275,7 @@
 /*    overflow-x: scroll;*/
     white-space: nowrap;
     width: auto;
+    overflow: hidden;
 /*    margin: 0 1vw 0 0.3vw;*/
 }
 

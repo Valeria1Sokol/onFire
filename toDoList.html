@@ -174,7 +174,7 @@
                 swipeStatus: function(event, phase, direction, distance, duration, fingers, fingerData) {
 
                     if (phase == $.fn.swipe.phases.PHASE_START) {
-                        //							$(this).text("moving...");
+                        $(this).text("moving...");
                     }
 
                     if (phase == $.fn.swipe.phases.PHASE_CANCEL) {
@@ -182,7 +182,7 @@
                     }
                 },
                 swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-                    //					  	$(this).text("You swiped " + direction + " with " + fingerCount + " fingers");
+                    $(this).text("You swiped " + direction + " with " + fingerCount + " fingers");
                 },
                 threshold: 0,
                 fingers: 2
@@ -191,6 +191,7 @@
         });
 
     </script>
+<!--
     <script>
         new Sortable(sortablelist, {
             animation: 150,
@@ -198,6 +199,7 @@
         });
 
     </script>
+-->
 
 
 </body>

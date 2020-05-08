@@ -110,6 +110,8 @@
     width: 5.55vw;
     height: 32.2vw;
     justify-content: flex-start;
+    border-right: 1px solid white;
+    margin: 0;
 }
 
 #user1 .timeBox .time {
@@ -139,7 +141,7 @@
     flex-direction: row;
 }
 
-#user1 .timeBox .lightTime:nth-child(2n+1) {
+#user1 .timeBox .time:nth-child(2n+1) {
     margin: 0 0 2.35vw;
 }
 
@@ -461,24 +463,43 @@
 
     .container .content .toDoList .col:first-of-type {
         width: 100%;
-        height: fit-content;
+        height: 64.5vw;
         margin: 0;
-        padding: 6.25vw 0 0 5.2vw;
+        padding: 0 0 0 5.2vw;
+        margin: 6.25vw 0 1vw;
+        overflow-y: scroll;
     }
 
     #user1 .do {
         font-size: 6.85vw;
         line-height: 5.85vw;
+        margin: 0 0 7vw;
+    }
+
+    .toDoList #user1 .do:nth-child(1) {
+        margin: 0px 0 6.5vw;
+    }
+
+    .toDoList #user1 .do:nth-child(2) {
+        margin: 0px 0 6.5vw;
+    }
+
+    .toDoList #user1 .do:nth-child(3) {
+        margin: 0px 0 8vw;
+    }
+
+    #user1 .do:last-of-type {
+        margin: 0;
     }
 
     #user1 .timeBox {
-        padding: 2.6vw 3.72vw 10.7vw 0;
+        padding: 2.6vw 3.72vw 2.6vw 0;
         width: 11.55vw;
         height: fit-content;
     }
 
-    #user1 .timeBox .lightTime:nth-child(2n+1) {
-        margin: 0 0 4.3vw;
+    #user1 .timeBox .time:nth-child(2n+1) {
+        margin: 0 0 5.3vw;
     }
 
     .circleSvg,
@@ -487,8 +508,9 @@
     }
 
     #user1 .list:last-of-type {
-        height: 49vw;
+        height: 100%;
         padding: 0;
+        justify-content: flex-start;
     }
 
     .circleSvg .circle {
@@ -499,17 +521,6 @@
         border: 0.3vw solid white;
     }
 
-    .toDoList #user1 .do:nth-child(2n-1) {
-        margin: 0;
-    }
-
-    .toDoList #user1 .do:nth-child(2) {
-        margin: -2vw 0 -4vw;
-    }
-
-    .slideDot {
-        margin: -2vw 0 0;
-    }
 
     .rightBox .time {
         font-size: 3.9vw;

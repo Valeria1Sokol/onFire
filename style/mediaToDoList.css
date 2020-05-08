@@ -113,7 +113,8 @@
 
     .grid .timeBox {
         width: 14vw;
-        padding: 8.9vw 0.85vw 2.42vw 1.47vw;
+        padding: 3.9vw 0.85vw 2.42vw 1.47vw;
+        margin-top: 5vw;
     }
 
     #user1 .list {

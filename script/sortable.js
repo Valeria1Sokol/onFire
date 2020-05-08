@@ -679,7 +679,7 @@
                 var animating = false,
                     animationTime = 0;
                 animationStates.forEach(function (state) {
-                    var time = 0,
+                    var time = 900,
                         target = state.target,
                         fromRect = target.fromRect,
                         toRect = getRect(target),

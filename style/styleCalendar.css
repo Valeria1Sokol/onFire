@@ -33,22 +33,23 @@
     opacity: 0.3;
 }
 
-.content .toDoList .do {
+#user1 .do {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: normal;
     font-size: 2.57vw;
-    line-height: 2.86vw;
-    letter-spacing: -0.05em;
+    line-height: 2.6vw;
+    letter-spacing: -0.045em;
     color: #FFFFFF;
 }
 
-.content .toDoList .doLight {
+#user1 .doLight {
     opacity: 0.3;
 }
 
 .container .content .grid {
     padding: 2.5vw 8.8vw 6.12vw 5.5vw;
+    justify-content: flex-start;
 }
 
 .container .content .toDoList {
@@ -56,14 +57,27 @@
 }
 
 .container .content .toDoList .col {
-    width: 50%;
+    width: 46%;
     justify-content: space-between;
 }
 
 .container .content .toDoList .col:first-of-type {
-    width: 45%;
+    width: 49.5%;
     height: 21.2vw;
     margin: 4.5vw 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#user1 .list:last-of-type {
+    background: none;
+    margin: 0;
+    height: 21.7vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0.52vw;
 }
 
 .whiteLine {
@@ -77,7 +91,6 @@
     justify-content: flex-start;
     width: auto;
     height: 32.2vw;
-    margin: 4.5vw 0 0;
 }
 
 .circleSvg .circle {
@@ -92,41 +105,46 @@
     border-radius: 50%;
 }
 
-.grid .timeBox {
+#user1 .timeBox {
     padding: 0.9vw 0.8vw 0 0;
-    width: 6vw;
+    width: 5.55vw;
     height: 32.2vw;
     justify-content: flex-start;
-    margin: 4.5vw 0 0;
 }
 
-.grid .timeBox .time {
+#user1 .timeBox .time {
     margin: 0vw 0 0;
 }
 
-.grid .timeBox .tittleTime {
+#user1 .timeBox .tittleTime {
     font-size: 1.1vw;
     line-height: 1.1vw;
     margin: 0 0 4.55vw;
+    font-family: 'BebasNeue-Regular';
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
 }
 
-.grid .timeBox .time {
+#user1 .timeBox .time {
     font-family: 'BebasNeue-Regular';
     line-height: 1.83vw;
     font-style: normal;
     font-weight: normal;
+    letter-spacing: normal;
 }
 
-.grid .timeBox .lightTime:nth-child(2n+1) {
+.timeLine {
+    display: flex;
+    flex-direction: row;
+}
+
+#user1 .timeBox .lightTime:nth-child(2n+1) {
     margin: 0 0 2.35vw;
 }
 
-.container .content .toDoList p {
-    font-size: 2.6vw;
-    line-height: 2.6vw;
-}
 
-.container .content .toDoList .do:nth-child(2n-1) {
+.toDoList #user1 .do:nth-child(2n-1) {
     margin: 0px 0 1vw;
 }
 
@@ -155,9 +173,9 @@
     background-repeat: no-repeat;
     background-size: 26%;
     background-position: center;
-        width: 3.7vw;
+    width: 3.7vw;
     height: 3.7vw;
-    /*    background: rgba(255, 255, 255, 0.5);*/
+    /*        background: rgba(255, 255, 255, 0.5);*/
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -166,10 +184,12 @@
 
 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev span,
 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next span {
-/*
+
+    /*
     width: 19px;
     height: 32px;
 */
+
 }
 
 .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
@@ -305,4 +325,330 @@
 
 .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active:after {
     background: #FFAC76;
+}
+
+@media all and (max-width:1024px) {
+    .container .header {
+        background-image: url(../img/345244412.png);
+        background-position: center;
+        padding: 2vw 4.6vw 24vw 6.3vw;
+    }
+
+    .container {
+        background-color: #2D1639;
+    }
+
+    .container .content {
+        margin: -14vw 0 0;
+        background-color: transparent;
+        padding: 0 0 1vw;
+    }
+
+    .rightBox .userBox {
+        flex-direction: column;
+    }
+
+    .rightBox .userBox .time {
+        margin: 0;
+    }
+
+    .rightBox .weatherBox,
+    .container .header .topHeader .date,
+    .container .content .tittle {
+        display: none;
+    }
+
+    .container .nav {
+        width: 6vw;
+        margin: 0 6.1vw 0 0;
+    }
+
+    .container .nav .burger {
+        width: 100%;
+        height: 0.5vw;
+        margin: 0 0 1.5vw;
+    }
+
+    .container .tittle {
+        font-size: 6.9vw;
+        line-height: 6.9vw;
+    }
+
+    .container .rightBox {
+        width: auto;
+    }
+
+    .container .content .grid {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .container .content .toDoList {
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-year {
+        font-size: 4.9vw;
+        line-height: 4.9vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header {
+        height: 6.3vw;
+        padding: 0 5.4vw;
+    }
+
+    .widget tr {
+        padding: 0 5.4vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        left: 7%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        right: 7%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        background-size: 16%;
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar th {
+        font-size: 4.9vw;
+        line-height: 4.9vw;
+        width: 7.5vw;
+        height: 4vw;
+    }
+
+    .widget thead tr {
+        height: 6.6vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar td,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+        width: 7.5vw;
+        height: 7.5vw;
+        margin: 0;
+    }
+
+    .container .content .toDoList .col {
+        width: 87%;
+        margin: 0;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td a,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span {
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+
+    #user1 .timeBox .tittleTime {
+        font-size: 3vw;
+        line-height: 3vw;
+        margin: 0 0 8.3vw;
+    }
+
+    #user1 .timeBox .time {
+        line-height: 4.9vw;
+        font-size: 4.9vw;
+    }
+
+    .container .content .toDoList .col:first-of-type {
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 6.25vw 0 0 5.2vw;
+    }
+
+    #user1 .do {
+        font-size: 6.85vw;
+        line-height: 5.85vw;
+    }
+
+    #user1 .timeBox {
+        padding: 2.6vw 3.72vw 10.7vw 0;
+        width: 11.55vw;
+        height: fit-content;
+    }
+
+    #user1 .timeBox .lightTime:nth-child(2n+1) {
+        margin: 0 0 4.3vw;
+    }
+
+    .circleSvg,
+    .whiteLine {
+        height: 100%;
+    }
+
+    #user1 .list:last-of-type {
+        height: 49vw;
+        padding: 0;
+    }
+
+    .circleSvg .circle {
+        width: 3.5vw;
+        height: 3.5vw;
+        left: -1.9vw;
+        top: 71%;
+        border: 0.3vw solid white;
+    }
+
+    .toDoList #user1 .do:nth-child(2n-1) {
+        margin: 0;
+    }
+
+    .toDoList #user1 .do:nth-child(2) {
+        margin: -2vw 0 -4vw;
+    }
+
+    .slideDot {
+        margin: -2vw 0 0;
+    }
+
+    .rightBox .time {
+        font-size: 3.9vw;
+        line-height: 3.9vw;
+    }
+
+    .rightBox .user {
+        width: 9.2vw;
+        height: 9.2vw;
+    }
+
+    .slideDot .dot {
+        width: 1.2vw;
+        height: 1.2vw;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    .container .nav {
+        display: none;
+    }
+
+    .container .tittle {
+        font-family: 'BebasNeue-Regular';
+        font-size: 9.3vw;
+        line-height: 9.3vw;
+    }
+
+    .rightBox .user {
+        width: 12.24vw;
+        height: 12.24vw;
+        border: 0.4vw solid #ffffff;
+    }
+
+    .rightBox .time {
+        font-size: 7.45vw;
+        line-height: 7.45vw;
+    }
+
+    .container .header {
+        padding: 9.26vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title,
+    .widget > .ui-datepicker > .ui-datepicker-calendar th,
+    .widget > .ui-datepicker > .ui-datepicker-calendar td span,
+        {
+        font-size: 4.54vw;
+        line-height: 4.54vw;
+    }
+
+    .rightBox .userBox {
+        flex-direction: column-reverse;
+    }
+
+    .rightBox .userBox .time {
+        margin: 2.8vw 0 0;
+    }
+
+    .container .content .toDoList .col {
+        width: 100%;
+    }
+
+    .widget tr {
+        margin-top: 2vw;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header {
+        width: 73%;
+        padding: 0;
+    }
+
+    .widget thead tr {
+        height: 8.6vw;
+    }
+
+    .container .header .bottomHeader,
+    .container .header .topHeader {
+        align-items: flex-start;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev,
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        background-size: 25%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-prev {
+        left: 3%;
+    }
+
+    .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-next {
+        right: 30%;
+    }
+
+    #user1 .do {
+        font-size: 6.5vw;
+        line-height: 6.5vw;
+    }
+
+    .container .content .toDoList p {
+        font-size: 4.7vw;
+        line-height: 4.7vw;
+    }
+
+    #user1 .timeBox .tittleTime {
+        font-size: 2.8vw;
+        line-height: 2.8vw;
+    }
+
+    .slideDot .dot {
+        width: 3vw;
+        height: 3vw;
+        margin: 0 1.8vw 0 0;
+    }
+
+    .container .content {
+        padding: 0 0 4vw;
+    }
+
+    #user1 .timeBox {
+        padding: 2.6vw 3.72vw 25vw 0;
+    }
+
+    .slideDot {
+        margin: -6vw 0 0;
+    }
+
+    .circleSvg .circle {
+        top: 58%;
+    }
+}
+
+@media all and (max-width:425px) {
+    .whiteLine rect {
+        width: 1px;
+    }
+
+    .circleSvg .circle {
+        left: -2.4vw;
+    }
 }

@@ -108,7 +108,6 @@
     width: 1.4vw;
 }
 
-
 .rightBox .location {
     font-family: 'Quicksand';
     font-style: normal;
@@ -199,7 +198,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 4vw;
+    margin: 0 4.55vw 0 0;
 }
 
 .rightBox .userBox {
@@ -243,7 +242,6 @@
     font-size: 1.83vw;
     line-height: 2.2vw;
     color: #FFFFFF;
-
 }
 
 .grid .timeBox .lightTime {
@@ -403,7 +401,6 @@
 }
 
 .slideDot .active {
-
     background: #FFFFFF;
 }
 
@@ -433,28 +430,10 @@
     margin-top: 5vw;
 }
 
-@media all and (max-height:1100px) {
-    .Redline {
-        top: 795px;
-    }
+.ipadView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4vw;
 }
-
-@media all and (max-height:900px) {
-    .Redline {
-        top: 596px;
-    }
-}
-
-@media all and (max-height:800px) {
-    .Redline {
-        top: 422px;
-    }
-}
-
-@media all and (max-height:720px) {
-    .Redline {
-        top: 532px;
-    }
-}
-
-

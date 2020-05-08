@@ -388,6 +388,7 @@
     .container .content .toDoList {
         flex-direction: column-reverse;
         overflow: hidden;
+            align-items: center;
     }
 
     .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month,
@@ -439,7 +440,7 @@
     }
 
     .container .content .toDoList .col {
-        width: 87%;
+        width: 72%;
         margin: 0;
     }
 

@@ -174,15 +174,15 @@
                 swipeStatus: function(event, phase, direction, distance, duration, fingers, fingerData) {
 
                     if (phase == $.fn.swipe.phases.PHASE_START) {
-                        $(this).text("moving...");
+//                        $(this).text("moving...");
                     }
 
                     if (phase == $.fn.swipe.phases.PHASE_CANCEL) {
-                        $(this).text("swipe cancelled (due to finger count) ");
+//                        $(this).text("swipe cancelled (due to finger count) ");
                     }
                 },
                 swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-                    $(this).text("You swiped " + direction + " with " + fingerCount + " fingers");
+//                    $(this).text("You swiped " + direction + " with " + fingerCount + " fingers");
                 },
                 threshold: 0,
                 fingers: 2

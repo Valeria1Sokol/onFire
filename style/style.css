@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+#d
+{
+    overflow-x: scroll;
+}
 
 /*style of toDoList*/
 .container .header {

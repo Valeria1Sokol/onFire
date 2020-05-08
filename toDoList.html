@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/font.css">
     <link rel="stylesheet" href="style/mediaToDoList.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
     <script src="script/sortable.js"></script>
 </head>
 
@@ -70,77 +75,79 @@
                     <p class="time">18:00</p>
                     <p class="time">19:00</p>
                 </div>
-                <div class="toDoList" id="sortablelist" data-id="1">
-                    <div class="col" data-id="2" id="user1">
-                        <div class="user"><img src="img/Ellipse%2046.png" alt="">
-                            <p class="name">Daniel</p>
-                        </div>
-                        <div class="allDayList">
-                            <p>Renew OnFire subscription</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Package 2353 delivery to office</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Kids school party</p>
-                        </div>
-                        <div class="list">
-                            <p class="listText">Meeting with John</p>
-                        </div>
-                    </div>
-                    <div class="col" data-id="3" id="user2">
-                        <div class="user"><img src="img/Ellipse%2047.png" alt="">
-                            <p class="name">Isabella</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Kindergarden</p>
+                <div id='d'>
+                    <div class="toDoList" id="sortablelist" data-id="1">
+                        <div class="col" data-id="2" id="user1">
+                            <div class="user"><img src="img/Ellipse%2046.png" alt="">
+                                <p class="name">Daniel</p>
+                            </div>
+                            <div class="allDayList">
+                                <p>Renew OnFire subscription</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">Package 2353 delivery to office</p>
+                            </div>
                             <div class="list">
                                 <p class="listTextLight">Kids school party</p>
                             </div>
+                            <div class="list">
+                                <p class="listText">Meeting with John</p>
+                            </div>
+                        </div>
+                        <div class="col" data-id="3" id="user2">
+                            <div class="user"><img src="img/Ellipse%2047.png" alt="">
+                                <p class="name">Isabella</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">Kindergarden</p>
+                                <div class="list">
+                                    <p class="listTextLight">Kids school party</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col" data-id="4" id="user3">
+                            <div class="user"><img src="img/Ellipse%2048.png" alt="">
+                                <p class="name">Elana</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">School trip</p>
+                            </div>
+                        </div>
+                        <div class="col" data-id="5" id="user4">
+                            <div class="user"><img src="img/Ellipse%2049.png" alt="">
+                                <p class="name">Kate</p>
+                            </div>
+                            <div class="allDayList">
+                                <p>Alex Birthday</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">English lesson</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">Meeting with friends</p>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="col" data-id="4" id="user3">
-                        <div class="user"><img src="img/Ellipse%2048.png" alt="">
-                            <p class="name">Elana</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">School trip</p>
-                        </div>
-                    </div>
-                    <div class="col" data-id="5" id="user4">
-                        <div class="user"><img src="img/Ellipse%2049.png" alt="">
-                            <p class="name">Kate</p>
-                        </div>
-                        <div class="allDayList">
-                            <p>Alex Birthday</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">English lesson</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Meeting with friends</p>
-                        </div>
-                    </div>
-
-                    <div class="col" data-id="6" id="user5">
-                        <div class="user"><img src="img/Ellipse%2049.png" alt="">
-                            <p class="name">Kate</p>
-                        </div>
-                        <div class="allDayList">
-                            <p>House move</p>
-                        </div>
-                        <div class="allDayList">
-                            <p>Office move</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Meeting with Shareholders</p>
-                        </div>
-                        <div class="list">
-                            <p class="listTextLight">Lunch with Simon Sinek</p>
-                        </div>
-                        <div class="list">
-                            <p class="listText">Dinner with Elon Musk</p>
+                        <div class="col" data-id="6" id="user5">
+                            <div class="user"><img src="img/Ellipse%2049.png" alt="">
+                                <p class="name">Kate</p>
+                            </div>
+                            <div class="allDayList">
+                                <p>House move</p>
+                            </div>
+                            <div class="allDayList">
+                                <p>Office move</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">Meeting with Shareholders</p>
+                            </div>
+                            <div class="list">
+                                <p class="listTextLight">Lunch with Simon Sinek</p>
+                            </div>
+                            <div class="list">
+                                <p class="listText">Dinner with Elon Musk</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,11 +167,39 @@
         <div class="circle"></div>
     </div>
 
+
+    <script id='code_1'>
+        $(function() {
+            $("#d").swipe({
+                swipeStatus: function(event, phase, direction, distance, duration, fingers, fingerData) {
+
+                    if (phase == $.fn.swipe.phases.PHASE_START) {
+                        //							$(this).text("moving...");
+                    }
+
+                    if (phase == $.fn.swipe.phases.PHASE_CANCEL) {
+                        $(this).text("swipe cancelled (due to finger count) ");
+                    }
+                },
+                swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                    //					  	$(this).text("You swiped " + direction + " with " + fingerCount + " fingers");
+                },
+                threshold: 0,
+                fingers: 2
+            });
+
+        });
+
+    </script>
     <script>
         new Sortable(sortablelist, {
             animation: 150,
             ghostClass: 'blue-background-class'
         });
+
     </script>
 
-</body></html>
+
+</body>
+
+</html>

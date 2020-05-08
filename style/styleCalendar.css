@@ -642,7 +642,7 @@
     }
 
     #user1 .timeBox {
-        padding: 2.6vw 3.72vw 25vw 0;
+        padding: 2.6vw 3.72vw 2.5vw 0;
     }
 
     .slideDot {
@@ -650,7 +650,7 @@
     }
 
     .circleSvg .circle {
-        top: 58%;
+        top: 70%;
     }
 }
 

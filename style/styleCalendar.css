@@ -341,9 +341,9 @@
     }
 
     .container .content {
-        margin: -14vw 0 0;
+        margin: -16vw 0 0;
         background-color: transparent;
-        padding: 0 0 1vw;
+        padding: 0 0 7vw;
     }
 
     .rightBox .userBox {
@@ -388,7 +388,7 @@
     .container .content .toDoList {
         flex-direction: column-reverse;
         overflow: hidden;
-            align-items: center;
+        align-items: center;
     }
 
     .widget > .ui-datepicker > .ui-datepicker-header > .ui-datepicker-title > .ui-datepicker-month,
@@ -432,12 +432,18 @@
         height: 6.6vw;
     }
 
+    .widget > .ui-datepicker > .ui-datepicker-calendar {
+
+        margin: 1vw 0 0;
+    }
+
     .widget > .ui-datepicker > .ui-datepicker-calendar td,
     .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
-        width: 7.5vw;
-        height: 7.5vw;
+        width: 6vw;
+        height: 6vw;
         margin: 0;
     }
+
 
     .container .content .toDoList .col {
         width: 72%;
@@ -496,7 +502,7 @@
     #user1 .timeBox {
         padding: 2.6vw 3.72vw 2.6vw 0;
         width: 11.55vw;
-        height: fit-content;
+        height: 74vw;
     }
 
     #user1 .timeBox .time:nth-child(2n+1) {

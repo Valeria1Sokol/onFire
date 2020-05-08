@@ -550,6 +550,11 @@
 }
 
 @media all and (max-width:768px) {
+    .widget > .ui-datepicker > .ui-datepicker-calendar td, .widget > .ui-datepicker > .ui-datepicker-calendar td a.ui-state-active {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: 0;
+}
 
     .container .nav {
         display: none;

@@ -6,7 +6,7 @@
 
 /* width */
 .toDoList::-webkit-scrollbar {
-    height: 1vw;
+    height: 2vw;
 }
 
 /* Track */
@@ -293,6 +293,7 @@
     width: 21.4vw;
     white-space: nowrap;
     margin: 0 0 0 1vw;
+        height: fit-content;
 }
 
 .container .content .toDoList .user {

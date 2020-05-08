@@ -658,8 +658,4 @@
     .whiteLine rect {
         width: 1px;
     }
-
-    .circleSvg .circle {
-        left: -2.4vw;
-    }
 }

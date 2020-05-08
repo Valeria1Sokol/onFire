@@ -3,9 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-#d
-{
-    overflow-x: scroll;
+
+/* width */
+.toDoList::-webkit-scrollbar {
+    height: 1vw;
+}
+
+/* Track */
+.toDoList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.toDoList::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 /*style of toDoList*/
@@ -227,6 +240,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 0 0 2vw;
 }
 
 .grid .timeBox {

@@ -181,6 +181,15 @@
         margin: 0 0 3.02vw;
     }
 
+    .container .header .bottomHeader,
+    .container .header .topHeader {
+        align-items: flex-start;
+    }
+
+    .container .tittle {
+        padding: 0.8vw 0 0;
+    }
+
 }
 
 @media all and (max-width:768px) {
